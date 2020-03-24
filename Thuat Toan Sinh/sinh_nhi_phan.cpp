@@ -3,22 +3,6 @@ using namespace std;
 
 int a[20],n;
 
-void init();
-bool isEnd();
-void display();
-void gene();
-
-int main()
-{
-    init();
-    while( ! isEnd() )
-    {
-        display();
-        gene();
-    }
-    display();
-    return 0;
-}
 void init()
 {
     cin>>n;
@@ -54,4 +38,15 @@ void gene()
             break;
         }
     }
+}
+int main()
+{
+    init();
+    while( ! isEnd() )
+    {
+        display();
+        gene();
+    }
+    display();
+    return 0;
 }
